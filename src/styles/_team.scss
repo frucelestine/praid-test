@@ -1,0 +1,54 @@
+.team {
+  margin:0 auto 95px;
+  @include flex-set;
+  text-align: left;
+  flex-wrap: wrap;
+
+  & .team_item {
+    margin-bottom: 20px;
+    width: 270px;
+
+    & .team_item-image {
+      width: inherit;
+      height: 270px;
+    }
+
+    & .team_item-name {
+      font-size: 22px;
+      color: #3b3e41;
+    }
+
+    & .team_item-rank {
+      font-size: 13px;
+      color: #e84545;
+      text-transform: uppercase;
+    }
+
+    & .team_item-text {
+      font-size: 14px;
+      color: #6c7279;
+      margin-bottom: 30px;
+    }
+
+    & .team_social {
+      @include flex-set;
+      width: 130px;
+
+      & .team_social-item {
+        @include social-icons;
+
+        &.facebook::before {
+          background-image: url(../images/fa-facebook.png);
+        }
+
+        &.twitter::before {
+          background-image: url(../images/fa-twiter.png);
+        }
+
+        &.linkedin::before {
+          background-image: url(../images/fa-linkedin.png);
+        }
+      }
+    }
+  }
+}

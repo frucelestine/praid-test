@@ -25,6 +25,13 @@ var myNavigation = document.getElementById("myNav");
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) { 
+        myNavigation.style.cssText ="max-width:100%; justify-content:space-around; padding:15px 0; background-color:#2d304a; top:0; box-shadow: 2px 2px 2px 2px #2d304a;"
+    }
+    else {
+        myNavigation.style.cssText = "width:100%; padding: 0 0 38px 0; background-color:unset; top:unset; box-shadow: unset; justify-content:space-between;"
+    }
+
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         myButton.style.opacity = "1";
     } else {

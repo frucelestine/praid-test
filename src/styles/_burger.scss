@@ -1,0 +1,32 @@
+.burger {
+  width: 35px;
+  height: 40px;
+  padding: 0;
+  position: fixed;
+  text-align: right;
+  margin: 0;
+  top: 20px;
+  right: 40px;
+  z-index: 99;
+  display: none;
+  cursor: pointer;
+  background-color: transparent;
+  & div {
+    width: inherit;
+    height: 6px;
+    margin: 3px;
+    border-radius: 2px;
+    background-color: #000105;
+  }
+}
+
+.toggler .burger1 {
+  transform: rotate(45deg) translate(8px, 0);
+}
+
+.toggler .burger2 {
+  opacity: 0;
+}
+.toggler .burger3 {
+  transform: rotate(-45deg) translate(12px, -5px);
+}

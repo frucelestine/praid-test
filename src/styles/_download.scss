@@ -1,0 +1,21 @@
+.download {
+  padding: 100px 0;
+
+  & .download_heading {
+    margin: 0 0 20px;
+    font-size: 28px;
+    font-weight: 300;
+  }
+
+  & .download_note {
+    font-size: 13px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  & .download_btn {
+    @include page-btn;
+    padding: 20px 84px;
+  }
+}
