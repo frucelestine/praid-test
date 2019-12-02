@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+@import "mixin";
+
+// HEADER
+@import "head";
+
+// MAIN
+
+// FEATURES SECTION
+@import "feature";
+
+// WORKS SECTION
+@import "works";
+
+// SECTION TEAM
+@import "team";
+
+// CLIENTS SECTION
+@import "clients";
+
+// DOWNLOAD SECTION
+@import "download";
+
+// FOOT SECTION
+@import "foot";
+
+
+// TO TOP BUTTON
+@import "to-top";
+
+// BURGER
+@import "burger";
+
+// MEDIA
+@import "mediaStyles";

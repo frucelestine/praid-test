@@ -1,0 +1,36 @@
+.features {
+  color: #2d3033;
+  font-size: 14px;
+  padding: 120px 0 45px;
+  @include flex-set;
+  flex-wrap: wrap;
+
+  & .features_item {
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 295px;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    margin-bottom: 75px;
+    transition: transform 0.5s, background-color 0.5s,; 
+
+    & .features_item-image {
+      max-width: 75px;
+      height: 65px;
+      margin-bottom: 30px;
+    }
+
+    & .features_item-heading {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 27px;
+    }
+
+    &:hover{
+      background-color: #9d9fb2;
+      border: 2px solid #60626e;
+      border-radius: 10px;
+      transform: scale(1.03);
+    }
+  }
+}

@@ -1,0 +1,169 @@
+@media screen and (max-width: 1500px) {
+  .head {
+    margin-bottom: 100px;
+  }
+
+  .head-nav {
+    padding-right: 20px;
+  }
+
+  .logotype {
+    margin-left: 20px;
+  }
+
+  .sec-wrapper {
+    padding: unset;
+  }
+
+  .download {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .head-nav {
+    position: fixed;
+    padding-top: 60px;
+    top: -38px;
+    right: 0;
+    width: 100% !important;
+    background-color: rgba(44, 47, 73, 1);
+    transform: translateX(100%);
+    border-radius: 0 5px 0 5px;
+
+    & .nav-items {
+      flex-direction: column !important;
+      align-items: center;
+
+      & .nav-link {
+        color: #ffffff !important;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 20px !important;
+
+        &:hover {
+          color: #e85555 !important;
+        }
+      }
+    }
+  }
+
+  .team{
+      justify-content: space-around;
+  }
+
+  .clients{
+
+  .slide {
+    height: 500px;
+
+    & .clients_image {
+      height: 55%;
+      width: 100%;
+      top: 0;
+    }
+
+    & .clients_details {
+      text-align: center;
+      padding: 10px;
+      height: 45%;
+      width: 100%; 
+      top: unset;
+      bottom: 0;
+      & .clients_details-heading{
+          font-size: 25px;
+          max-width: 100%;
+      }
+    }
+  }
+}
+
+.slick-dots{
+    bottom: 20px !important;
+}
+
+  .burger {
+    display: block;
+  }
+
+  .active {
+    transform: translateX(0);
+  }
+  .features {
+    margin: 0 20px;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .features_item {
+    &:hover {
+      transform: scale(1) !important;
+    }
+  }
+
+  .team {
+    margin: 0 20px 95px;
+  }
+  .contact_info {
+    align-items: center;
+
+    & h4 {
+      margin: 30px 0 10px !important;
+    }
+  }
+
+  .title-heading {
+    font-size: 45px !important;
+  }
+
+  .works_item {
+    width: 300px !important;
+  }
+
+  .team{
+      margin: 0 20px 60px;
+  }
+  .team_item {
+    margin: 0 auto 30px !important;
+    
+  }
+
+  .team_item-text{
+      margin-bottom: 10px !important;
+  }
+
+//   .clients{
+
+//   .slide {
+//     height: 500px;
+
+//     & .clients_image {
+//       height: 50%;
+//       width: 100%;
+//       top: 0;
+//     }
+
+//     & .clients_details {
+//       padding: 10px;
+//       height: 50%;
+//       width: 100%; 
+//       top: unset;
+//       bottom: 0;
+//       & .clients_details-heading{
+//           font-size: 25px;
+//       }
+//     }
+//   }
+// }
+
+// .slick-dots{
+//     bottom: 20px !important;
+// }
+
+  .about,
+  .location {
+    margin: 0 auto;
+  }
+}

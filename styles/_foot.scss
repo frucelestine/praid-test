@@ -1,0 +1,82 @@
+.foot {
+  & .contact {
+    padding: 0 20px;
+    background-color: #3a3e64;
+
+    & .contact_info {
+      text-align: center;
+      padding: 70px 0 85px;
+      font-size: 14px;
+      @include flex-set;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      & h4 {
+        color: #ffffff;
+        font-weight: 700;
+        margin: 0 0 30px;
+      }
+
+      & p {
+        color: #9d9fb2;
+      }
+
+      & .location {
+        width: 154px;
+        // margin: 0 auto;
+      }
+
+      & .share {
+        margin: 0 auto;
+        width: 140px;
+
+        & .share_social {
+          @include flex-set;
+
+          & .share_link {
+            @include social-icons;
+            border-radius: 2px;
+
+            &.face::before {
+              background-image: url(../images/fa-facebook2.png);
+            }
+
+            &.twit::before {
+              background-image: url(../images/fa-twiter2.png);
+            }
+
+            &.linked::before {
+              background-image: url(../images/fa-linkedin2.png);
+            }
+          }
+        }
+      }
+
+      & .about {
+        max-width: 330px;
+      }
+    }
+  }
+}
+
+// COPYRIGHT SECTION
+
+.copyright {
+  background-color: #313454;
+
+  & .copyright_item {
+    padding: 28px 0;
+    font-size: 14px;
+    max-width: 313px;
+
+    & .copyright_text {
+      margin: 0;
+      color: #60626e;
+
+      & .fix {
+        font-family: "Open Sans", sans-serif;
+        color: #ffffff;
+      }
+    }
+  }
+}

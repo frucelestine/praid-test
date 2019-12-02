@@ -1,0 +1,68 @@
+.clients {
+  width: 100%;
+  margin: 0 auto;
+  & .slide {
+    position: relative;
+    height: 500px;
+    width: 100%;
+
+    & .clients_image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: inherit;
+      width: 50%;
+      object-fit: cover;
+    }
+
+    & .clients_details {
+      box-sizing: border-box;
+      background-color: #53354a;
+      padding: 100px 80px 182px 80px;
+      height: inherit;
+      color: #ffffff;
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      & .clients_details-heading {
+        padding: 0;
+        max-width: 502px;
+        margin: 0 0 30px;
+        font-family: "Cardo", serif;
+        font-weight: 400;
+        font-size: 36px;
+        font-style: italic;
+      }
+
+      & .clients_details-note {
+        padding: 0;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  & .slick-dots {
+    width: 95px;
+    right: 30%;
+    bottom: 100px;
+
+    & li {
+      margin: -1px;
+    }
+  }
+}
+
+.slick-dots li.slick-active button::before {
+  color: #ffffff;
+}
+.slick-dots li button::before {
+  color: #755d6e;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
